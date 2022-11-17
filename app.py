@@ -18,7 +18,7 @@ def get_data():
 
 df=get_data()
 
-with open(r'C:\Users\James Christensen\Python_3_10\dashboard\style.css') as f:
+with open(r'style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 colorSelect= st.sidebar.selectbox("Color Scheme:", ("Region","Country"))
