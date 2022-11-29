@@ -72,10 +72,10 @@ with left_col:
     st.subheader("Number of Countries:")
     st.subheader(f"{count}")
 with middle_col:
-    st.subheader("Total Addressable  Market:")
+    st.subheader("Total Addressable Market:")
     st.subheader(f"${total} Billion")
 with right_col:
-    st.markdown('### Opportunity Index Average:')
+    st.subheader('Opportunity Index Average:')
     st.subheader(f"{average}")
 
 
