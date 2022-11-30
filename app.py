@@ -21,7 +21,13 @@ df=get_data()
 with open(r'style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
+st.sidebar.subheader("Chart Options")
 colorSelect= st.sidebar.selectbox("Color Scheme:", ("Region","Country"))
+logX= st.sidebar.checkbox("Logarithmic X-Axis")
+st.sidebar.caption("Select to group axes values by high, medium, and low.")
+tick_values= st.sidebar.checkbox("Range")
+bubbleSize=st.sidebar.slider("Adjust Bubble Size", min_value=50, max_value=500,value=200)
+
 st.sidebar.markdown("---")
 
 newRegion=st.sidebar.multiselect(
@@ -58,6 +64,11 @@ else:
 
 st.markdown('---')
 
+if logX:
+    axisValue=True
+else:
+    axisValue=False
+
 #Reset Button
 # if reset = st.sidebar.button("Reset Filters"):
     
@@ -80,7 +91,7 @@ with right_col:
 
 
 #Bubble Chart
-fig = px.scatter(df_selection, x='Opportunity Index', y='Regulatory Index*',size="TAM", color=color_select,hover_name="Country", size_max=200,log_x=True,template ="simple_white")
+fig = px.scatter(df_selection, x='Opportunity Index', y='Regulatory Index*',size="TAM", color=color_select,hover_name="Country", size_max=bubbleSize,log_x=axisValue,template ="simple_white")
 fig.update_layout(height=700,
     title="Market Overview",
     font=dict(
@@ -88,6 +99,25 @@ fig.update_layout(height=700,
         size=18,
         # color="#F79E1B"
     ))
+
+if tick_values:
+    fig.update_layout(
+    xaxis = dict(
+        tickmode = 'array',
+        tickvals = [2,5,8],
+        ticktext = ['Low', 'Med.', 'High']
+    )
+    )
+
+    fig.update_layout(
+    yaxis = dict(
+        tickmode = 'array',
+        tickvals = [1,2,3],
+        ticktext = ['Low', 'Med.', 'High']
+    )
+    )
+else:
+    pass
 
 st.plotly_chart(fig, height=700, use_container_width=True)
 st.markdown("---")
@@ -99,7 +129,7 @@ with st.expander("Show Data Table", expanded=False):
 # ---- HIDE STREAMLIT STYLE ----
 hide_st_style = """
             <style>
-            #MainMenu {visibility: hidden;}
+            MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             header {visibility: hidden;}
             </style>
