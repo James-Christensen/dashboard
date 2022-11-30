@@ -23,12 +23,13 @@ with open(r'style.css') as f:
 # Sidebar
 st.sidebar.subheader("Chart Options")
 colorSelect= st.sidebar.selectbox("Color Scheme:", ("Region","Country"))
-st.sidebar.caption("Select to set the x-axis to a logarithmic axis. Improves readability.")
+st.sidebar.markdown("---")
 logX= st.sidebar.checkbox("Logarithmic X-Axis")
-st.sidebar.caption("Select to group axes values by high, medium, and low.")
+st.sidebar.caption("Select to set the x-axis to a logarithmic axis. Improves readability.")
 tick_values= st.sidebar.checkbox("Range")
+st.sidebar.caption("Select to group axes values by high, medium, and low.")
 bubbleSize=st.sidebar.slider("Adjust Bubble Size", min_value=50, max_value=500,value=200)
-
+st.sidebar.caption("Slide to adjust the size of the bubbles and visual impact of TAM")
 st.sidebar.markdown("---")
 
 newRegion=st.sidebar.multiselect(
