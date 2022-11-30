@@ -20,9 +20,10 @@ df=get_data()
 
 with open(r'style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-
+# Sidebar
 st.sidebar.subheader("Chart Options")
 colorSelect= st.sidebar.selectbox("Color Scheme:", ("Region","Country"))
+st.sidebar.caption("Select to set the x-axis to a logarithmic axis. Improves readability.")
 logX= st.sidebar.checkbox("Logarithmic X-Axis")
 st.sidebar.caption("Select to group axes values by high, medium, and low.")
 tick_values= st.sidebar.checkbox("Range")
