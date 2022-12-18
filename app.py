@@ -81,7 +81,7 @@ else:
     market = "Million"
     
 #KPIS Alt View
-with st.expander('Show Stats',expanded=False):
+with st.expander('Show Stats',expanded=True):
     left_col,middle_col,right_col = st.columns(3)
     with left_col:
         st.subheader("Number of Countries:")
