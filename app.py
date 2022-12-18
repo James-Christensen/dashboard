@@ -18,18 +18,14 @@ def get_data():
 
 df=get_data()
 
-with open(r'style.css') as f:
-    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-# Sidebar
+
 st.sidebar.subheader("Chart Options")
-colorSelect= st.sidebar.selectbox("Color Scheme:", ("Region","Country"))
-st.sidebar.markdown("---")
-logX= st.sidebar.checkbox("Logarithmic X-Axis")
-st.sidebar.caption("Select to set the x-axis to a logarithmic axis. Improves readability.")
-tick_values= st.sidebar.checkbox("Range")
+colorSelect= st.sidebar.selectbox("Color Scheme:", ("Region","Country","Influence"))
+logX= st.sidebar.checkbox("Logarithmic Y-Axis")
 st.sidebar.caption("Select to group axes values by high, medium, and low.")
+tick_values= st.sidebar.checkbox("Range")
 bubbleSize=st.sidebar.slider("Adjust Bubble Size", min_value=50, max_value=500,value=200)
-st.sidebar.caption("Slide to adjust the size of the bubbles and visual impact of TAM")
+
 st.sidebar.markdown("---")
 
 newRegion=st.sidebar.multiselect(
@@ -55,16 +51,18 @@ except:
     df_selection=df.query("Region ==@newRegion")
 
 count= len(df_selection.index)
-total=df_selection['TAM'].sum().round()
+total=(df_selection['Market Size'].sum()/1000).round(2)
 average = round((df_selection['Opportunity Index'].sum())/count,2)
 
 
 if colorSelect == "Country":
     color_select = "Country"
-else:
+elif colorSelect =="Region":
     color_select="Region"
+else:
+    color_select="Regional Influence"
 
-st.markdown('---')
+# st.markdown('---')
 
 if logX:
     axisValue=True
@@ -80,20 +78,21 @@ else:
 # st.markdown("---")
 
 #KPIS Alt View
-left_col,middle_col,right_col = st.columns(3)
-with left_col:
-    st.subheader("Number of Countries:")
-    st.subheader(f"{count}")
-with middle_col:
-    st.subheader("Total Addressable Market:")
-    st.subheader(f"${total} Billion")
-with right_col:
-    st.subheader('Opportunity Index Average:')
-    st.subheader(f"{average}")
+with st.expander('Show Stats',expanded=False):
+    left_col,middle_col,right_col = st.columns(3)
+    with left_col:
+        st.subheader("Number of Countries:")
+        st.subheader(f"{count}")
+    with middle_col:
+        st.subheader("Market Size:")
+        st.subheader(f"${total} Billion")
+    with right_col:
+        st.subheader('Opportunity Index Average:')
+        st.subheader(f"{average}")
 
 
 #Bubble Chart
-fig = px.scatter(df_selection, x='Opportunity Index', y='Regulatory Index*',size="TAM", color=color_select,hover_name="Country", size_max=bubbleSize,log_x=axisValue,template ="simple_white")
+fig = px.scatter(df_selection, y='Opportunity Index', x='Regulatory Index',size="Market Size", color=color_select,hover_name="Country", size_max=bubbleSize,log_y=axisValue,template ="simple_white")
 fig.update_layout(height=700,
     title="Market Overview",
     font=dict(
