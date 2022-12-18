@@ -88,7 +88,7 @@ with st.expander('Show Stats',expanded=False):
         st.subheader(f"{count}")
     with middle_col:
         st.subheader("Market Size:")
-        st.subheader(f"${total} Billion")
+        st.subheader(f"${total} {market}")
     with right_col:
         st.subheader('Opportunity Index Average:')
         st.subheader(f"{average}")
