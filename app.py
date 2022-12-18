@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+
+
 st.set_page_config(
     page_title="Global Open Banking Readiness Indices",
     page_icon=":chart_with_upwards_trend:",
@@ -18,6 +20,9 @@ def get_data():
 
 df=get_data()
 
+
+with open(r'style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 st.sidebar.subheader("Chart Options")
 colorSelect= st.sidebar.selectbox("Color Scheme:", ("Region","Country","Influence"))
@@ -69,13 +74,6 @@ if logX:
 else:
     axisValue=False
 
-#Reset Button
-# if reset = st.sidebar.button("Reset Filters"):
-    
-
-#KPIS
-# st.markdown(f'<div class="display-flex"><div class="card"><h2>Countries</h2><h1>{count}</h1></div><div class="card"><h2>TAM</h2><h1>${total}B</h1></div><div class="card"><h2>Oppty. Index Avg.</h2><h1>{average}</h1></div></div>', unsafe_allow_html=True)
-# st.markdown("---")
 
 #KPIS Alt View
 with st.expander('Show Stats',expanded=False):
@@ -120,9 +118,11 @@ if tick_values:
 else:
     pass
 
-st.plotly_chart(fig, height=700, use_container_width=True)
-st.markdown("---")
+st.plotly_chart(fig,theme="streamlit", height=700, use_container_width=True)
 
+
+
+    
 #DataFrame
 with st.expander("Show Data Table", expanded=False): 
     st.dataframe(df_selection,use_container_width=True)
