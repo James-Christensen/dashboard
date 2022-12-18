@@ -74,7 +74,12 @@ if logX:
 else:
     axisValue=False
 
-
+if total >=1:
+    market= "Billion"
+else:
+    total=(total *1000).round(2)
+    market = "Million"
+    
 #KPIS Alt View
 with st.expander('Show Stats',expanded=False):
     left_col,middle_col,right_col = st.columns(3)
