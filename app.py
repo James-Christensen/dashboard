@@ -152,7 +152,7 @@ with st.expander("Show Data Table", expanded=False):
     
 #BarChart
 
-st.altair_chart(bars,use_container_width=False)
+st.altair_chart(bars,theme="streamlit", use_container_width=False)
 
 
 # ---- HIDE STREAMLIT STYLE ----
