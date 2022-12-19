@@ -5,7 +5,7 @@ import plotly.express as px
 
 
 st.set_page_config(
-    page_title="Global Open Banking Readiness Indices",
+    page_title="GOBRI",
     page_icon=":chart_with_upwards_trend:",
     layout="wide",
     initial_sidebar_state="collapsed",
