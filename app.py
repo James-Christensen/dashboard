@@ -156,7 +156,7 @@ bars = alt.Chart(barDF).mark_bar().encode(
     tooltip=[{"field": "Country", "type": "nominal"},
     {"field": "Count of Aggregators", "type": "quantitative"},
     {"field": "Fintech / Bank Ratio", "type": "quantitative"},
-    {"field": "MA Depth of Relationship", "type": "quantitative"}]
+    {"field": "MA Depth of Relationship", "type": "nominal"}]
     
 ).configure_mark(
     color='orange'
