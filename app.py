@@ -56,6 +56,8 @@ bars = alt.Chart(barDF).mark_bar().encode(
     x='Country',
     y='Opportunity Index'
     
+).configure_mark(
+    color='orange'
 )
 text = bars.mark_text(
     align='left',
