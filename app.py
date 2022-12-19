@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-
+import altair as alt
 
 
 st.set_page_config(
@@ -49,7 +49,12 @@ if show_countries:
         options=df_Reg["Country"].unique(),
         default=df_Reg["Country"].unique(),
     )
+bar_data=pd.read_csv(r'bardata.csv')
+barDF=pd.DataFrame(data=bar_data)
 
+
+    
+    
 try:
     df_selection=df.query("Region ==@newRegion & Country == @newCountry")
 except:
@@ -134,6 +139,20 @@ st.plotly_chart(fig,theme="streamlit", height=700, use_container_width=True)
 #DataFrame
 with st.expander("Show Data Table", expanded=False): 
     st.dataframe(df_selection,use_container_width=True)
+    
+#BarChart
+bars = alt.Chart(barDF).mark_bar().encode(
+    x='Country',
+    y='Opportunity Index'
+    
+)
+text = bars.mark_text(
+    align='left',
+    baseline='middle',
+    dx=3  # Nudges text to right so it doesn't appear on top of the bar
+).encode(
+    text='Country'
+)
 
 # ---- HIDE STREAMLIT STYLE ----
 hide_st_style = """
