@@ -1,52 +1,52 @@
 ﻿Country,Opportunity Index,Regulatory Index,Market Size,Region,Regional Influence
-Argentina,3.39,3,10.29,Latin America,Low
-Australia,3.02,5,49.89,Asia Pacific,High
-Austria,0,5,17.6,Europe,Low
-Belgium,0.52,5,20.8,Europe,Medium
-Brazil,2.94,4,53.84,Latin America,Medium
+Argentina,2.41,3,10.29,Latin America,Low
+Australia,3.39,5,49.89,Asia Pacific,High
+Austria,0.97,5,17.6,Europe,Low
+Belgium,4.18,5,20.8,Europe,Medium
+Brazil,0.54,4,53.84,Latin America,Medium
 Canada,3,5,66.79,North America,Low
-Chile,0.97,3,8.69,Latin America,Low
-China,1.14,6,767.6,Asia Pacific,High
-Colombia,2.41,5,6.41,Latin America,Low
-Costa Rica,7.82,2,1.83,Latin America,Medium
+Chile,2.94,3,8.69,Latin America,Low
+China,3.27,6,767.6,Asia Pacific,High
+Colombia,3.02,5,6.41,Latin America,Low
+Costa Rica,4.08,2,1.83,Latin America,Medium
 Denmark,0.72,5,15.26,Europe,Medium
-Dominican Republic,0.9,3,1.56,Latin America,Low
-Egypt,0.62,5,3.61,MENA,High
-Estonia,3.88,5,1.28,Europe,Low
-Finland,8.28,5,11.04,Europe,Low
-France,0.93,5,105.73,Europe,High
-Germany,15.12,5,164.65,Europe,High
-Greece,2.31,5,8.1,Europe,Low
-Guatemala,2.94,2,1.95,Latin America,Low
-Hong Kong,1.27,4,2.11,Asia Pacific,Low
-India,3.21,6,84.36,Asia Pacific,High
-Indonesia,8.59,6,28.01,Asia Pacific,Medium
-Ireland,2.67,5,9.74,Europe,Medium
-Israel,2.9,4,14.51,MENA,Low
-Italy,0.44,5,80.86,Europe,High
-Japan,0.1,4,205.57,Asia Pacific,Low
-Latvia,0.56,5,1.29,Europe,Low
-Lithuania,0.68,5,2.35,Europe,Medium
-Malaysia,2.48,3,10.22,Asia Pacific,Low
-Mexico,3.27,3,14.51,Latin America,High
-Netherlands,4.92,5,37.05,Europe,High
-New Zealand,0.35,5,8.21,Asia Pacific,Low
-Nigeria,1.7,5,6.94,MENA,High
-Norway,2.53,4,14.15,Europe,Low
-Panama,2.11,2,0.97,Latin America,Low
-Peru,4.18,3,4.81,Latin America,Low
-Philippines,8.51,3,7.09,Asia Pacific,Medium
-Poland,1.7,5,25.58,Europe,Medium
-Portugal,13.97,5,9.08,Europe,Low
-Puerto Rico,0.5,5,4.2,Latin America,Low
-Saudi Arabia,2.01,5,21.27,MENA,High
-Singapore,1.38,5,12.45,Asia Pacific,High
-South Africa,13.69,3,10.33,MENA,High
-South Korea,1.97,5,69.45,Asia Pacific,Medium
-Spain,2.49,5,54.69,Europe,Medium
-Sweden,8.76,5,22.59,Europe,Medium
-Taiwan,11.04,4,21.31,Asia Pacific,Low
-Turkey,6.66,4,21.35,MENA,High
-United Arab Emirates,0.22,6,14.85,MENA,High
-United Kingdom,4.08,6,121.38,Europe,High
-United States,0.54,5,949.97,North America,High
+Dominican Republic,8.76,3,1.56,Latin America,Low
+Egypt,8.28,5,3.61,MENA,High
+Estonia,2.53,5,1.28,Europe,Low
+Finland,2.49,5,11.04,Europe,Low
+France,0.68,5,105.73,Europe,High
+Germany,0.56,5,164.65,Europe,High
+Greece,3.88,5,8.1,Europe,Low
+Guatemala,4.92,2,1.95,Latin America,Low
+Hong Kong,15.12,4,2.11,Asia Pacific,Low
+India,0.44,6,84.36,Asia Pacific,High
+Indonesia,1.7,6,28.01,Asia Pacific,Medium
+Ireland,0.93,5,9.74,Europe,Medium
+Israel,13.97,4,14.51,MENA,Low
+Italy,0.52,5,80.86,Europe,High
+Japan,0,4,205.57,Asia Pacific,Low
+Latvia,2.67,5,1.29,Europe,Low
+Lithuania,3.21,5,2.35,Europe,Medium
+Malaysia,2.01,3,10.22,Asia Pacific,Low
+Mexico,1.7,3,14.51,Latin America,High
+Netherlands,0.22,5,37.05,Europe,High
+New Zealand,13.69,5,8.21,Asia Pacific,Low
+Nigeria,1.38,5,6.94,MENA,High
+Norway,0.1,4,14.15,Europe,Low
+Panama,1.97,2,0.97,Latin America,Low
+Peru,6.66,3,4.81,Latin America,Low
+Philippines,8.59,3,7.09,Asia Pacific,Medium
+Poland,0.5,5,25.58,Europe,Medium
+Portugal,0.35,5,9.08,Europe,Low
+Puerto Rico,1.14,5,4.2,Latin America,Low
+Saudi Arabia,1.27,5,21.27,MENA,High
+Singapore,11.04,5,12.45,Asia Pacific,High
+South Africa,2.48,3,10.33,MENA,High
+South Korea,8.51,5,69.45,Asia Pacific,Medium
+Spain,0.62,5,54.69,Europe,Medium
+Sweden,2.9,5,22.59,Europe,Medium
+Taiwan,2.31,4,21.31,Asia Pacific,Low
+Turkey,7.82,4,21.35,MENA,High
+United Arab Emirates,0.9,6,14.85,MENA,High
+United Kingdom,2.94,6,121.38,Europe,High
+United States,2.11,5,949.97,North America,High
