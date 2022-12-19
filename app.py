@@ -52,8 +52,18 @@ if show_countries:
 bar_data=pd.read_csv(r'bardata.csv')
 barDF=pd.DataFrame(data=bar_data)
 
-
+bars = alt.Chart(barDF).mark_bar().encode(
+    x='Country',
+    y='Opportunity Index'
     
+)
+text = bars.mark_text(
+    align='left',
+    baseline='middle',
+    dx=3  # Nudges text to right so it doesn't appear on top of the bar
+).encode(
+    text='Country'
+)    
     
 try:
     df_selection=df.query("Region ==@newRegion & Country == @newCountry")
@@ -141,7 +151,8 @@ with st.expander("Show Data Table", expanded=False):
     st.dataframe(df_selection,use_container_width=True)
     
 #BarChart
-st.bar_chart(barDF,x='Country',y='Opportunity Index', use_container_width=True)
+
+st.altair_chart(bars,use_container_width=False)
 
 
 # ---- HIDE STREAMLIT STYLE ----
