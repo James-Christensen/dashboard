@@ -54,7 +54,10 @@ barDF=pd.DataFrame(data=bar_data)
 
 bars = alt.Chart(barDF).mark_bar().encode(
     x='Country',
-    y='Opportunity Index'
+    y='Opportunity Index',
+    tooltip=[{"field": "Count of Aggregators", "type": "quantitative"},
+    {"field": "Fintech / Bank Ratio", "type": "quantitative"},
+    {"field": "MA Depth of Relationship", "type": "quantitative"}]
     
 ).configure_mark(
     color='orange'
