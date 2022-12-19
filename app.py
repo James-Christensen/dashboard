@@ -55,7 +55,7 @@ barDF=pd.DataFrame(data=bar_data)
 barDF.sort_values(by='Opportunity Index', ascending=False)
 
 bars = alt.Chart(barDF).mark_bar().encode(
-    x='Country',
+    x=alt.X('Country', sort="y"),
     y='Opportunity Index',
     tooltip=[{"field": "Country", "type": "nominal"},
     {"field": "Count of Aggregators", "type": "quantitative"},
