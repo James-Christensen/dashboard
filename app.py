@@ -97,7 +97,7 @@ with st.expander('Show Stats',expanded=True):
 #Bubble Chart
 fig = px.scatter(df_selection, y='Opportunity Index', x='Regulatory Index',size="Market Size", color=color_select,hover_name="Country", size_max=bubbleSize,log_y=axisValue,template ="simple_white")
 if color_select=="Regional Influence":
-    fig = px.scatter(df_selection, y='Opportunity Index', x='Regulatory Index',size="Market Size", color=color_select,hover_name="Country", color_discrete_map={"High": "orange","Medium": "yellow","Low": "purple"},category_orders={"Regional Influence":["Low","Medium","High"],size_max=bubbleSize,log_y=axisValue,template ="simple_white")
+    fig = px.scatter(df_selection, y='Opportunity Index', x='Regulatory Index',size="Market Size", color=color_select,hover_name="Country", color_discrete_map={"High": "orange","Medium": "yellow","Low": "purple"},category_orders={"Regional Influence":["Low","Medium","High"]},size_max=bubbleSize,log_y=axisValue,template ="simple_white")
 
 fig.update_layout(height=700,
     title="     Market Overview",
