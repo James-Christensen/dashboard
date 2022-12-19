@@ -53,26 +53,7 @@ bar_data=pd.read_csv(r'bardata.csv')
 barDF=pd.DataFrame(data=bar_data)
 
 barDF.sort_values(by='Opportunity Index', ascending=False)
-sortx='Country'
-        
-bars = alt.Chart(barDF).mark_bar().encode(
-    x=sortx,
-    y='Opportunity Index',
-    tooltip=[{"field": "Country", "type": "nominal"},
-    {"field": "Count of Aggregators", "type": "quantitative"},
-    {"field": "Fintech / Bank Ratio", "type": "quantitative"},
-    {"field": "MA Depth of Relationship", "type": "quantitative"}]
-    
-).configure_mark(
-    color='orange'
-)
-text = bars.mark_text(
-    align='left',
-    baseline='middle',
-    dx=3  # Nudges text to right so it doesn't appear on top of the bar
-).encode(
-    text='Country'
-)    
+sortx='Country'  
     
 try:
     df_selection=df.query("Region ==@newRegion & Country == @newCountry")
@@ -165,6 +146,24 @@ change_sort=st.checkbox(label="Change Sort", value=False, key="ChangeSort")
 if change_sort:
          sortx=alt.X('Country', sort="y")
         
+bars = alt.Chart(barDF).mark_bar().encode(
+    x=sortx,
+    y='Opportunity Index',
+    tooltip=[{"field": "Country", "type": "nominal"},
+    {"field": "Count of Aggregators", "type": "quantitative"},
+    {"field": "Fintech / Bank Ratio", "type": "quantitative"},
+    {"field": "MA Depth of Relationship", "type": "quantitative"}]
+    
+).configure_mark(
+    color='orange'
+)
+text = bars.mark_text(
+    align='left',
+    baseline='middle',
+    dx=3  # Nudges text to right so it doesn't appear on top of the bar
+).encode(
+    text='Country'
+)  
 st.altair_chart(bars,theme=None, use_container_width=True)
 
 
