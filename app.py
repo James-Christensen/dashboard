@@ -14,7 +14,7 @@ st.set_page_config(
 #all data
 @st.cache
 def get_data():
-    all_data=pd.read_csv(r'data.csv')  
+    all_data=pd.read_csv(r'bardata.csv.csv')  
     df= pd.DataFrame(data=all_data)
     return df
 
