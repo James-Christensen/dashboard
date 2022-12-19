@@ -54,6 +54,10 @@ barDF=pd.DataFrame(data=bar_data)
 
 barDF.sort_values(by='Opportunity Index', ascending=False)
 sortx='Country'  
+newDF=(barDF["MA Depth of Relationship"]*100).astype(int)
+newDF=newDF.astype(str)
+
+barDF["MA Depth of Relationship"]= newDF.astype(str) + '%'
     
 try:
     df_selection=df.query("Region ==@newRegion & Country == @newCountry")
