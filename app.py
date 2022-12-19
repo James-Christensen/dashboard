@@ -141,18 +141,8 @@ with st.expander("Show Data Table", expanded=False):
     st.dataframe(df_selection,use_container_width=True)
     
 #BarChart
-bars = alt.Chart(barDF).mark_bar().encode(
-    x='Country',
-    y='Opportunity Index'
-    
-)
-text = bars.mark_text(
-    align='left',
-    baseline='middle',
-    dx=3  # Nudges text to right so it doesn't appear on top of the bar
-).encode(
-    text='Country'
-)
+st.bar_chart(barDF,x='Country',y='Opportunity Index', use_container_width=True)
+
 
 # ---- HIDE STREAMLIT STYLE ----
 hide_st_style = """
