@@ -52,6 +52,8 @@ if show_countries:
 bar_data=pd.read_csv(r'bardata.csv')
 barDF=pd.DataFrame(data=bar_data)
 
+barDF.sort_values(by='Opportunity Index', ascending=False)
+
 bars = alt.Chart(barDF).mark_bar().encode(
     x='Country',
     y='Opportunity Index',
