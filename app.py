@@ -53,9 +53,7 @@ bar_data=pd.read_csv(r'bardata.csv')
 barDF=pd.DataFrame(data=bar_data)
 
 barDF.sort_values(by='Opportunity Index', ascending=False)
-sortx='Country'
-if change_sort:
-         sortx=alt.X('Country', sort="y")
+
         
 bars = alt.Chart(barDF).mark_bar().encode(
     x=sortx,
@@ -163,6 +161,10 @@ with st.expander("Show Data Table", expanded=False):
     
 #BarChart
 change_sort=st.checkbox(label="Change Sort", value=False, key="ChangeSort")
+sortx='Country'
+if change_sort:
+         sortx=alt.X('Country', sort="y")
+        
 st.altair_chart(bars,theme=None, use_container_width=True)
 
 
