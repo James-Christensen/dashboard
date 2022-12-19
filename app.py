@@ -84,8 +84,7 @@ else:
 with st.expander('Show Stats',expanded=True):
     left_col,middle_col,right_col = st.columns(3)
     with left_col:
-        st.subheader("Number of Countries:")
-        st.subheader(f"{count}")
+        st.metric(label="Number of Countries:", value=count)
     with middle_col:
         st.subheader("Market Size:")
         st.subheader(f"${total} {market}")
