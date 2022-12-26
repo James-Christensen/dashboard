@@ -76,7 +76,7 @@ h1{
     margin: auto;
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     vertical-align: middle;
 }
@@ -84,7 +84,7 @@ h1{
 h2{
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     color: black;
     vertical-align: top;
 }
