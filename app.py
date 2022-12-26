@@ -131,7 +131,7 @@ fig = px.scatter(
     log_y=axisValue,
     template="simple_white",
 )
-if color_select == "Regional Influence":
+if color_select == "Influence":
     fig = px.scatter(
         df_selection,
         y="Opportunity Index",
