@@ -14,41 +14,43 @@ st.set_page_config(
 #all data
 @st.cache
 def get_data():
-    all_data=pd.read_csv(r'data.csv')  
-    df= pd.DataFrame(data=all_data)
+    all_data = pd.read_csv(r"data.csv")
+    df = pd.DataFrame(data=all_data)
     return df
 
-df=get_data()
 
+df = get_data()
 
-with open(r'style.css') as f:
-    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 st.sidebar.subheader("Chart Options")
-colorSelect= st.sidebar.selectbox("Color Scheme:", ("Region","Country","Influence"))
-logX= st.sidebar.checkbox("Logarithmic Y-Axis")
+colorSelect = st.sidebar.selectbox("Color Scheme:", ("Region", "Country", "Influence"))
+influenceSelect = st.sidebar.selectbox(
+    "Select Influence:", ("All", "High", "Medium", "Low")
+)
+logX = st.sidebar.checkbox("Logarithmic Y-Axis")
 st.sidebar.caption("Select to group axes values by high, medium, and low.")
-tick_values= st.sidebar.checkbox("Range")
-bubbleSize=st.sidebar.slider("Adjust Bubble Size", min_value=50, max_value=500,value=200)
+tick_values = st.sidebar.checkbox("Range")
+bubbleSize = st.sidebar.slider(
+    "Adjust Bubble Size", min_value=50, max_value=500, value=200
+)
 
 st.sidebar.markdown("---")
 
-newRegion=st.sidebar.multiselect(
-    "Filter Regions:",
-    options=df["Region"].unique(),
-    default=df['Region'].unique()
-
+newRegion = st.sidebar.multiselect(
+    "Filter Regions:", options=df["Region"].unique(), default=df["Region"].unique()
 )
 
-df_Reg=df.query('Region ==@newRegion')
+df_Reg = df.query("Region ==@newRegion")
 
-show_countries= st.sidebar.checkbox("Check to Filter by Country")
-if show_countries: 
-    newCountry=st.sidebar.multiselect(
+show_countries = st.sidebar.checkbox("Check to Filter by Country")
+if show_countries:
+    newCountry = st.sidebar.multiselect(
         "Filter Countries",
         options=df_Reg["Country"].unique(),
         default=df_Reg["Country"].unique(),
     )
+
+
 barDF = df
 barDF.sort_values(by="Opportunity Index", ascending=False)
 sortx = "Country"
@@ -199,7 +201,6 @@ text = bars.mark_text(
     dx=3,  # Nudges text to right so it doesn't appear on top of the bar
 ).encode(text="Country")
 st.altair_chart(bars, use_container_width=True)
-
 
 
 # ---- HIDE STREAMLIT STYLE ----
