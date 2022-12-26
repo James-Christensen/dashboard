@@ -52,17 +52,29 @@ if show_countries:
 bar_data=pd.read_csv(r'bardata.csv')
 barDF=pd.DataFrame(data=bar_data)
 
+
+barDF=df
 barDF.sort_values(by='Opportunity Index', ascending=False)
 sortx='Country'  
-newDF=(barDF["MA Depth of Relationship"]*100).astype(int)
+bar_D=barDF['Depth of Relationship']
+newDF=(bar_D*100)
 newDF=newDF.astype(str)
 
-barDF["MA Depth of Relationship"]= newDF.astype(str) + '%'
-    
-try:
-    df_selection=df.query("Region ==@newRegion & Country == @newCountry")
-except:
-    df_selection=df.query("Region ==@newRegion")
+barDF['Depth']= newDF.astype(str) + '%'
+
+
+if influenceSelect=="All":
+    try:
+        df_selection=df.query("Region ==@newRegion & Country == @newCountry")
+    except:
+        df_selection=df.query("Region ==@newRegion")
+else: 
+    try:
+        df_selection=df.query("Region ==@newRegion & Country == @newCountry & Influence ==@influenceSelect")
+    except:
+        df_selection=df.query("Region ==@newRegion & Influence ==@influenceSelect")
+    else:
+        df_selection=df.query("Region ==@newRegion")
 
 count= len(df_selection.index)
 total=(df_selection['Market Size'].sum()/1000).round(2)
@@ -74,7 +86,7 @@ if colorSelect == "Country":
 elif colorSelect =="Region":
     color_select="Region"
 else:
-    color_select="Regional Influence"
+    color_select="Influence"
 
 # st.markdown('---')
 
@@ -150,14 +162,13 @@ change_sort=st.checkbox(label="Change Sort", value=False, key="ChangeSort")
 if change_sort:
          sortx=alt.X('Country', sort="y")
         
-bars = alt.Chart(barDF).mark_bar().encode(
+bars = alt.Chart(df_selection).mark_bar().encode(
     x=sortx,
     y='Opportunity Index',
     tooltip=[{"field": "Country", "type": "nominal"},
     {"field": "Count of Aggregators", "type": "quantitative"},
     {"field": "Fintech / Bank Ratio", "type": "quantitative"},
-    {"field": "MA Depth of Relationship", "type": "nominal"}]
-    
+    {"field": 'Depth', "type": "nominal", "title": "MA Depth of Relationship"}]
 ).configure_mark(
     color='orange'
 )
@@ -168,7 +179,8 @@ text = bars.mark_text(
 ).encode(
     text='Country'
 )  
-st.altair_chart(bars,theme=None, use_container_width=True)
+st.altair_chart(bars, use_container_width=True)
+
 
 
 # ---- HIDE STREAMLIT STYLE ----
