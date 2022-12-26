@@ -1,52 +1,52 @@
-﻿Country,Opportunity Index,Regulatory Index,Market Size,Count of Aggregators,Fintech / Bank Ratio,Depth of Relationship,Regulatory Clarity,Regulatory Obligations,Regional Influence,Region
-Argentina,2.41,5.00,10.29,5.00,14.00,0.85,2.00,1.00,Low,Latin America
-Australia,3.39,11.00,49.89,11.00,37.00,1.00,3.00,2.00,High,Asia Pacific
-Austria,0.97,12.00,17.60,17.00,33.00,0.50,3.00,2.00,Low,Europe
-Belgium,4.18,12.00,20.80,19.00,79.00,1.00,3.00,2.00,Medium,Europe
-Brazil,0.54,14.00,53.84,12.00,18.00,0.36,2.00,2.00,Medium,Latin America
-Canada,3.00,9.00,66.79,11.00,33.00,1.00,3.00,2.00,Low,North America
-Chile,2.94,6.00,8.69,8.00,24.00,1.00,2.00,1.00,Low,Latin America
-China,3.27,14.00,767.60,2.00,7.00,0.89,3.00,3.00,High,Asia Pacific
-Colombia,3.02,11.00,6.41,8.00,24.00,1.00,3.00,2.00,Low,Latin America
-Costa Rica,4.08,6.00,1.83,2.00,14.00,0.60,1.00,1.00,Medium,Latin America
-Denmark,0.72,12.00,15.26,17.00,37.00,0.33,3.00,2.00,Medium,Europe
-Dominican Republic,8.76,12.00,1.56,1.00,15.00,0.60,1.00,2.00,Low,Latin America
-Egypt,8.28,9.00,3.61,1.00,13.00,0.63,3.00,2.00,High,MENA
-Estonia,2.53,12.00,1.28,18.00,46.00,1.00,3.00,2.00,Low,Europe
-Finland,2.49,12.00,11.04,19.00,71.00,0.67,3.00,2.00,Low,Europe
-France,0.68,12.00,105.73,27.00,37.00,0.50,3.00,2.00,High,Europe
-Germany,0.56,12.00,164.65,28.00,36.00,0.44,3.00,2.00,High,Europe
-Greece,3.88,12.00,8.10,13.00,51.00,1.00,3.00,2.00,Low,Europe
-Guatemala,4.92,1.00,1.95,1.00,10.00,0.50,1.00,1.00,Low,Latin America
-Hong Kong,15.12,5.00,2.11,1.00,19.00,0.78,3.00,1.00,Low,Asia Pacific
-India,0.44,14.00,84.36,13.00,8.00,0.71,3.00,3.00,High,Asia Pacific
-Indonesia,1.70,15.00,28.01,8.00,17.00,0.79,3.00,3.00,Medium,Asia Pacific
-Ireland,0.93,12.00,9.74,19.00,44.00,0.40,3.00,2.00,Medium,Europe
-Israel,13.97,2.00,14.51,2.00,37.00,0.75,3.00,1.00,Low,MENA
-Italy,0.52,12.00,80.86,26.00,22.00,0.62,3.00,2.00,High,Europe
-Japan,0.00,8.00,205.57,2.00,13.00,0.00,2.00,2.00,Low,Asia Pacific
-Latvia,2.67,12.00,1.29,16.00,43.00,1.00,3.00,2.00,Low,Europe
-Lithuania,3.21,12.00,2.35,19.00,61.00,1.00,3.00,2.00,Medium,Europe
-Malaysia,2.01,2.00,10.22,3.00,8.00,0.80,2.00,1.00,Low,Asia Pacific
-Mexico,1.70,2.00,14.51,13.00,28.00,0.78,2.00,1.00,High,Latin America
-Netherlands,0.22,12.00,37.05,23.00,22.00,0.23,3.00,2.00,High,Europe
-New Zealand,13.69,10.00,8.21,2.00,37.00,0.75,3.00,2.00,Low,Asia Pacific
-Nigeria,1.38,16.00,6.94,6.00,9.00,0.92,2.00,3.00,High,MENA
-Norway,0.10,6.00,14.15,12.00,14.00,0.08,3.00,1.00,Low,Europe
-Panama,1.97,6.00,0.97,1.00,3.00,0.59,1.00,1.00,Low,Latin America
-Peru,6.66,11.00,4.81,4.00,36.00,0.75,1.00,2.00,Low,Latin America
-Philippines,8.59,6.00,7.09,2.00,19.00,0.89,2.00,1.00,Medium,Asia Pacific
-Poland,0.50,12.00,25.58,24.00,15.00,0.81,3.00,2.00,Medium,Europe
-Portugal,0.35,12.00,9.08,24.00,17.00,0.50,3.00,2.00,Low,Europe
-Puerto Rico,1.14,10.00,4.20,2.00,4.00,0.60,3.00,2.00,Low,Latin America
-Saudi Arabia,1.27,16.00,21.27,4.00,8.00,0.63,2.00,3.00,High,MENA
-Singapore,11.04,12.00,12.45,5.00,69.00,0.80,3.00,2.00,High,Asia Pacific
-South Africa,2.48,5.00,10.33,8.00,30.00,0.67,2.00,1.00,High,MENA
-South Korea,8.51,11.00,69.45,2.00,21.00,0.83,3.00,2.00,Medium,Asia Pacific
-Spain,0.62,12.00,54.69,29.00,45.00,0.40,3.00,2.00,Medium,Europe
-Sweden,2.90,12.00,22.59,18.00,52.00,1.00,3.00,2.00,Medium,Europe
-Taiwan,2.31,7.00,21.31,1.00,3.00,0.87,2.00,2.00,Low,Asia Pacific
-Turkey,7.82,12.00,21.35,2.00,19.00,0.83,2.00,2.00,High,MENA
-United Arab Emirates,0.90,14.00,14.85,8.00,13.00,0.56,3.00,3.00,High,MENA
-United Kingdom,2.94,14.00,121.38,26.00,102.00,0.75,3.00,3.00,High,Europe
-United States,2.11,12.00,949.97,18.00,53.00,0.72,3.00,2.00,High,North America
+﻿Country,Opportunity Index,Count of Aggregators,Fintech / Bank Ratio,Depth of Relationship,Regulatory Index,Regulatory Clarity,Regulatory Obligations,Influence,Market Size,Region
+Argentina,2.41,5.00,14.00,0.85,3.00,2.00,1.00,Low,10.29,Latin America
+Australia,3.39,11.00,37.00,1.00,5.00,3.00,2.00,High,49.89,Asia Pacific
+Austria,0.97,17.00,33.00,0.50,5.00,3.00,2.00,Low,17.60,Europe
+Belgium,4.18,19.00,79.00,1.00,5.00,3.00,2.00,Medium,20.80,Europe
+Brazil,0.54,12.00,18.00,0.36,4.00,2.00,2.00,Medium,53.84,Latin America
+Canada,3.00,11.00,33.00,1.00,5.00,3.00,2.00,Low,66.79,North America
+Chile,2.94,8.00,24.00,1.00,3.00,2.00,1.00,Low,8.69,Latin America
+China,3.27,2.00,7.00,0.89,6.00,3.00,3.00,High,767.60,Asia Pacific
+Colombia,3.02,8.00,24.00,1.00,5.00,3.00,2.00,Low,6.41,Latin America
+Costa Rica,4.08,2.00,14.00,0.60,2.00,1.00,1.00,Medium,1.83,Latin America
+Denmark,0.72,17.00,37.00,0.33,5.00,3.00,2.00,Medium,15.26,Europe
+Dominican Republic,8.76,1.00,15.00,0.60,3.00,1.00,2.00,Low,1.56,Latin America
+Egypt,8.28,1.00,13.00,0.63,5.00,3.00,2.00,High,3.61,MENA
+Estonia,2.53,18.00,46.00,1.00,5.00,3.00,2.00,Low,1.28,Europe
+Finland,2.49,19.00,71.00,0.67,5.00,3.00,2.00,Low,11.04,Europe
+France,0.68,27.00,37.00,0.50,5.00,3.00,2.00,High,105.73,Europe
+Germany,0.56,28.00,36.00,0.44,5.00,3.00,2.00,High,164.65,Europe
+Greece,3.88,13.00,51.00,1.00,5.00,3.00,2.00,Low,8.10,Europe
+Guatemala,4.92,1.00,10.00,0.50,2.00,1.00,1.00,Low,1.95,Latin America
+Hong Kong,15.12,1.00,19.00,0.78,4.00,3.00,1.00,Low,2.11,Asia Pacific
+India,0.44,13.00,8.00,0.71,6.00,3.00,3.00,High,84.36,Asia Pacific
+Indonesia,1.70,8.00,17.00,0.79,6.00,3.00,3.00,Medium,28.01,Asia Pacific
+Ireland,0.93,19.00,44.00,0.40,5.00,3.00,2.00,Medium,9.74,Europe
+Israel,13.97,2.00,37.00,0.75,4.00,3.00,1.00,Low,14.51,MENA
+Italy,0.52,26.00,22.00,0.62,5.00,3.00,2.00,High,80.86,Europe
+Japan,0.00,2.00,13.00,0.00,4.00,2.00,2.00,Low,205.57,Asia Pacific
+Latvia,2.67,16.00,43.00,1.00,5.00,3.00,2.00,Low,1.29,Europe
+Lithuania,3.21,19.00,61.00,1.00,5.00,3.00,2.00,Medium,2.35,Europe
+Malaysia,2.01,3.00,8.00,0.80,3.00,2.00,1.00,Low,10.22,Asia Pacific
+Mexico,1.70,13.00,28.00,0.78,3.00,2.00,1.00,High,14.51,Latin America
+Netherlands,0.22,23.00,22.00,0.23,5.00,3.00,2.00,High,37.05,Europe
+New Zealand,13.69,2.00,37.00,0.75,5.00,3.00,2.00,Low,8.21,Asia Pacific
+Nigeria,1.38,6.00,9.00,0.92,5.00,2.00,3.00,High,6.94,MENA
+Norway,0.10,12.00,14.00,0.08,4.00,3.00,1.00,Low,14.15,Europe
+Panama,1.97,1.00,3.00,0.59,2.00,1.00,1.00,Low,0.97,Latin America
+Peru,6.66,4.00,36.00,0.75,3.00,1.00,2.00,Low,4.81,Latin America
+Philippines,8.59,2.00,19.00,0.89,3.00,2.00,1.00,Medium,7.09,Asia Pacific
+Poland,0.50,24.00,15.00,0.81,5.00,3.00,2.00,Medium,25.58,Europe
+Portugal,0.35,24.00,17.00,0.50,5.00,3.00,2.00,Low,9.08,Europe
+Puerto Rico,1.14,2.00,4.00,0.60,5.00,3.00,2.00,Low,4.20,Latin America
+Saudi Arabia,1.27,4.00,8.00,0.63,5.00,2.00,3.00,High,21.27,MENA
+Singapore,11.04,5.00,69.00,0.80,5.00,3.00,2.00,High,12.45,Asia Pacific
+South Africa,2.48,8.00,30.00,0.67,3.00,2.00,1.00,High,10.33,MENA
+South Korea,8.51,2.00,21.00,0.83,5.00,3.00,2.00,Medium,69.45,Asia Pacific
+Spain,0.62,29.00,45.00,0.40,5.00,3.00,2.00,Medium,54.69,Europe
+Sweden,2.90,18.00,52.00,1.00,5.00,3.00,2.00,Medium,22.59,Europe
+Taiwan,2.31,1.00,3.00,0.87,4.00,2.00,2.00,Low,21.31,Asia Pacific
+Turkey,7.82,2.00,19.00,0.83,4.00,2.00,2.00,High,21.35,MENA
+United Arab Emirates,0.90,8.00,13.00,0.56,6.00,3.00,3.00,High,14.85,MENA
+United Kingdom,2.94,26.00,102.00,0.75,6.00,3.00,3.00,High,121.38,Europe
+United States,2.11,18.00,53.00,0.72,5.00,3.00,2.00,High,949.97,North America
