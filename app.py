@@ -60,7 +60,7 @@ bar_D=barDF['Depth of Relationship']
 newDF=(bar_D*100)
 newDF=newDF.astype(str)
 
-barDF['Depth']= newDF.astype(str) + '%'
+barDF['Depth of Relationship']= newDF.astype(str) + '%'
 
 
 if influenceSelect=="All":
