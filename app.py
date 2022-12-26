@@ -147,7 +147,7 @@ fig.update_layout(
     title="     Market Overview",
     font=dict(
         family="'Noto Sans KR', sans-serif",
-        size=32,
+        size=18,
         # color="#F79E1B"
     ),
 )
