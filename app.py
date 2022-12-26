@@ -190,7 +190,7 @@ bars = (
             {"field": "Country", "type": "nominal"},
             {"field": "Count of Aggregators", "type": "quantitative"},
             {"field": "Fintech / Bank Ratio", "type": "quantitative"},
-            {"field": "Depth", "type": "nominal", "title": "MA Depth of Relationship"},
+            {"field": "Depth of Relationship", "type": "nominal", "title": "MA Depth of Relationship"},
         ],
     )
     .configure_mark(color="orange")
