@@ -59,7 +59,7 @@ barDF = df
 barDF.sort_values(by="Opportunity Index", ascending=False)
 sortx = "Country"
 bar_D = barDF["Depth of Relationship"]
-newDF = bar_D * 100
+newDF = (bar_D * 100).round(2)
 newDF = newDF.astype(str)
 
 barDF["Depth of Relationship"] = newDF.astype(str) + "%"
