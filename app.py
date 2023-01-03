@@ -175,8 +175,8 @@ else:
 st.plotly_chart(fig, theme="streamlit", height=700, use_container_width=True)
 
 
-# Convert Opportunity Index column to float dtype.
-df_selection['Opportunity Index'] = df_selection['Opportunity Index'].astype('float')
+# Format to 2 decimal places
+df_selection['Opportunity Index'] = df_selection['Opportunity Index'].apply(lambda x: float("{:.2f}".format(x)))
 
 
 # DataFrame
