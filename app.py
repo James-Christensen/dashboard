@@ -178,7 +178,7 @@ df_selection=df_selection["Opportunity Index"].style.format("{:.2%}")
 
 # DataFrame
 with st.expander("Show Data Table", expanded=False):
-    st.dataframe(df_selection, use_container_width=True)
+    st.dataframe(df_selection.style.format({ ‘Opportunity INdex’: ‘{:.2f}’}), use_container_width=True)
 
 # BarChart
 change_sort = st.checkbox(label="Change Sort", value=False, key="ChangeSort")
