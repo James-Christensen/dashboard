@@ -174,11 +174,9 @@ else:
 
 st.plotly_chart(fig, theme="streamlit", height=700, use_container_width=True)
 
-df_selection.style.format(precision=3)  
-
 # DataFrame
 with st.expander("Show Data Table", expanded=False):
-    st.dataframe(df_selection, use_container_width=True)
+    st.dataframe(df_selection.style.format(precision=2), use_container_width=True)
 
 # BarChart
 change_sort = st.checkbox(label="Change Sort", value=False, key="ChangeSort")
