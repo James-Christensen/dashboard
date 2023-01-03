@@ -14,9 +14,6 @@ st.set_page_config(
 #import style sheet
 with open("style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-    
-#fixing float display in DF
-pd.set_option('display.precision', 2)
   
 #all data
 
@@ -83,8 +80,6 @@ else:
         df_selection = df.query("Region ==@newRegion & Influence ==@influenceSelect")
     else:
         df_selection = df.query("Region ==@newRegion")
-        
-df_selection = df_selection.round(2)
 
 count = len(df_selection.index)
 total = (df_selection["Market Size"].sum() / 1000).round(2)
@@ -179,6 +174,9 @@ else:
 
 st.plotly_chart(fig, theme="streamlit", height=700, use_container_width=True)
 
+
+# Convert Opportunity Index column to int dtype.
+df_selection['Opportunity Index'] = df_selection['Opportunity Index'].astype('int')
 
 # DataFrame
 with st.expander("Show Data Table", expanded=False):
