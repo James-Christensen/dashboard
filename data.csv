@@ -1,0 +1,52 @@
+﻿Country,Opportunity Index,Count of Aggregators,Fintech / Bank Ratio,Depth of Relationship,Regulatory Index,Regulatory Clarity,Regulatory Obligations,Influence,Market Size,Region
+Australia,3.39,11,37,100%,14,3,11,High,49.89,Asia Pacific
+Belgium,4.18,19,79,100%,16,4,12,Medium,20.80,Europe
+Canada,3.00,11,33,100%,12,3,9,Low,66.79,North America
+Chile,2.94,8,24,100%,10,4,6,Medium,8.69,Latin America
+Colombia,3.02,8,24,100%,13,2,11,Medium,6.41,Latin America
+Estonia,2.53,18,46,100%,16,4,12,Low,1.28,Europe
+Greece,3.88,13,51,100%,16,4,12,Low,8.10,Europe
+Latvia,2.67,16,43,100%,16,4,12,Low,1.29,Europe
+Lithuania,3.21,19,61,100%,16,4,12,Medium,2.35,Europe
+Sweden,2.90,18,52,100%,16,4,12,Medium,22.59,Europe
+Nigeria,1.38,6,9,92%,20,4,16,High,6.94,MENA
+China,3.27,2,7,89%,17,3,14,High,767.60,Asia Pacific
+Philippines,8.59,2,19,89%,8,2,6,Medium,7.09,Asia Pacific
+Taiwan,2.31,1,3,87%,11,4,7,Low,21.31,Asia Pacific
+Argentina,2.41,5,14,85%,8,3,5,Low,10.29,Latin America
+South Korea,8.51,2,21,83%,15,4,11,Medium,69.45,Asia Pacific
+Turkey,7.82,2,19,83%,15,3,12,High,21.35,MENA
+Poland,0.50,24,15,81%,16,4,12,Medium,25.58,Europe
+Malaysia,2.01,3,8,80%,5,3,2,Low,10.22,Asia Pacific
+Singapore,11.04,5,69,80%,16,4,12,High,12.45,Asia Pacific
+Indonesia,1.70,8,17,79%,19,4,15,Medium,28.01,Asia Pacific
+Mexico,1.70,13,28,78%,3,1,2,Medium,14.51,Latin America
+Hong Kong,15.12,1,19,78%,8,3,5,Low,2.11,Asia Pacific
+Israel,13.97,2,37,75%,5,3,2,Low,14.51,MENA
+New Zealand,13.69,2,37,75%,14,4,10,Low,8.21,Asia Pacific
+Peru,6.66,4,36,75%,12,1,11,Low,4.81,Latin America
+United Kingdom,2.94,26,102,75%,18,4,14,High,121.38,Europe
+United States,2.11,18,53,72%,15,3,12,High,949.97,North America
+India,0.44,13,8,71%,18,4,14,High,84.36,Asia Pacific
+Finland,2.49,19,71,67%,16,4,12,Low,11.04,Europe
+South Africa,2.48,8,30,67%,7,2,5,High,10.33,MENA
+Saudi Arabia,1.27,4,8,63%,20,4,16,High,21.27,MENA
+Egypt,8.28,1,13,63%,13,4,9,High,3.61,MENA
+Italy,0.52,26,22,62%,16,4,12,High,80.86,Europe
+Costa Rica,4.08,2,14,60%,7,1,6,Medium,1.83,Latin America
+Dominican Republic,8.76,1,15,60%,13,1,12,Low,1.56,Latin America
+Puerto Rico,1.14,2,4,60%,10,0,10,Low,4.20,Latin America
+Panama,1.97,1,3,59%,7,1,6,Low,0.97,Latin America
+United Arab Emirates,0.90,8,13,56%,17,3,14,High,14.85,MENA
+Austria,0.97,17,33,50%,16,4,12,Low,17.60,Europe
+France,0.68,27,37,50%,16,4,12,High,105.73,Europe
+Guatemala,4.92,1,10,50%,1,0,1,Low,1.95,Latin America
+Portugal,0.35,24,17,50%,16,4,12,Low,9.08,Europe
+Germany,0.56,28,36,44%,16,4,12,High,164.65,Europe
+Ireland,0.93,19,44,40%,16,4,12,Medium,9.74,Europe
+Spain,0.62,29,45,40%,16,4,12,Medium,54.69,Europe
+Brazil,0.54,12,18,36%,18,4,14,Medium,53.84,Latin America
+Denmark,0.72,17,37,33%,16,4,12,Medium,15.26,Europe
+Netherlands,0.22,23,22,23%,16,4,12,High,37.05,Europe
+Norway,0.10,12,14,8%,10,4,6,Low,14.15,Europe
+Japan,0.00,2,13,0%,11,3,8,Low,205.57,Asia Pacific
