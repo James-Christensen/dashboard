@@ -25,6 +25,7 @@ def get_data():
 
 df = get_data()
 
+df=df.round(2)
 
 st.sidebar.subheader("Chart Options")
 colorSelect = st.sidebar.selectbox("Color Scheme:", ("Region", "Country", "Influence"))
