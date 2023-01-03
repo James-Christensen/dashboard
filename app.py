@@ -175,13 +175,9 @@ else:
 st.plotly_chart(fig, theme="streamlit", height=700, use_container_width=True)
 
 
-# Format to 2 decimal places
-df_selection['Opportunity Index'] = df_selection['Opportunity Index'].apply(lambda x: float("{:.2f}".format(x)))
-
-
 # DataFrame
 with st.expander("Show Data Table", expanded=False):
-    st.dataframe(df_selection, use_container_width=True)
+    st.dataframe(df_selection.style.format("{:.2%}"), use_container_width=True)
 
 # BarChart
 change_sort = st.checkbox(label="Change Sort", value=False, key="ChangeSort")
