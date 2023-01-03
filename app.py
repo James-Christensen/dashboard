@@ -14,7 +14,10 @@ st.set_page_config(
 #import style sheet
 with open("style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
+    
+#fixing float display in DF
+pd.set_option('display.precision', 2)
+  
 #all data
 
 def get_data():
