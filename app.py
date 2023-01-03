@@ -175,10 +175,9 @@ else:
 st.plotly_chart(fig, theme="streamlit", height=700, use_container_width=True)
 
 
-# Convert Opportunity Index column to int dtype.
-df_selection['Opportunity Index'] = df_selection['Opportunity Index'].astype('int')
+# Convert Opportunity Index column to float dtype.
 df_selection['Opportunity Index'] = df_selection['Opportunity Index'].astype('float')
-df_selection['Opportunity Index'] = df_selection['Opportunity Index'].round(2)
+
 
 # DataFrame
 with st.expander("Show Data Table", expanded=False):
