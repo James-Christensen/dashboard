@@ -81,7 +81,7 @@ else:
     else:
         df_selection = df.query("Region ==@newRegion")
         
-df_selection = df_selection.round(0)
+df_selection = df_selection.round(2)
 
 count = len(df_selection.index)
 total = (df_selection["Market Size"].sum() / 1000).round(2)
