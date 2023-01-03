@@ -174,6 +174,7 @@ else:
 
 st.plotly_chart(fig, theme="streamlit", height=700, use_container_width=True)
 
+df_selection=df_selection["Opportunity Index"].style.format("{:.2%}")
 
 # DataFrame
 with st.expander("Show Data Table", expanded=False):
